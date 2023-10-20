@@ -37,5 +37,23 @@ namespace Catalog.Controllers
             }
             return item.AsDto();
        }
+
+        //POST /items
+        [HttpPost]
+       public ActionResult<ItemDto> CreateItem(CreateItemDto itemDto)
+       {
+        Item item = new()
+        {
+            Id = Guid.NewGuid(),
+            Name = itemDto.Name,
+            CreatedDate = DateTimeOffset.UtcNow,
+            Price = itemDto.Price
+
+        };
+
+        repository.CreateItem(item);
+        //CreatedAtAction method is commonly used for POST requests to create resources.
+        return CreatedAtAction(nameof(GetItem), new {id = item.Id}, item.AsDto());
+       }
     }
 }
