@@ -33,5 +33,12 @@ namespace Catalog.Repositories
             var index = items.FindIndex(existingItem => existingItem.Id == item.Id);
             items[index] = item;
         }
+
+        // Would not need a Dto bc there is only one variable that we need (id)
+        public void DeleteItem(Guid id)
+        {
+            var index = items.FindIndex(existingItem => existingItem.Id == id);
+            items.RemoveAt(index);
+        }
     }
 }
