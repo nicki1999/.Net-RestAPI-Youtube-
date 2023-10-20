@@ -17,7 +17,7 @@ namespace Catalog.Controllers
 
         //Get /items
         [HttpGet]
-       public IEnumerable<ItemDto> GetItems()
+       public IEnumerable<ItemDto> GetItems() 
        {
         var items = repository.GetItems().Select(item => item.AsDto());
         return items;
@@ -54,6 +54,27 @@ namespace Catalog.Controllers
         repository.CreateItem(item);
         //CreatedAtAction method is commonly used for POST requests to create resources.
         return CreatedAtAction(nameof(GetItem), new {id = item.Id}, item.AsDto());
+       }
+
+       //PUT /items/id
+
+       [HttpPut("{id}")]
+       public ActionResult UpdateItem(Guid id, UpdateItemDto itemDto)
+       {
+        var existingItem = repository.GetItem(id);
+
+        if (existingItem is null){
+            return NotFound();
+        }
+
+        Item updatedItem = existingItem with {
+            Name = itemDto.Name,
+            Price = itemDto.Price
+        };
+
+        repository.UpdateItem(updatedItem);
+
+        return NoContent();
        }
     }
 }
