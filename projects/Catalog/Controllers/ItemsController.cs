@@ -1,3 +1,4 @@
+using Catalog.Dtos;
 using Catalog.Entities;
 using Catalog.Repositories;
 using Microsoft.AspNetCore.Mvc;
@@ -16,9 +17,9 @@ namespace Catalog.Controllers
 
         //Get /items
         [HttpGet]
-       public IEnumerable<Item> GetItems()
+       public IEnumerable<ItemDto> GetItems()
        {
-        var items = repository.GetItems();
+        var items = repository.GetItems().Select(item => item.AsDto());
         return items;
        }
 
@@ -26,7 +27,7 @@ namespace Catalog.Controllers
        [HttpGet("{id}")]
 
        //ActionResult allows for multiple datatype to be returned from a function in this case it would be null and item itself
-       public ActionResult<Item?> GetItem(Guid id)
+       public ActionResult<ItemDto> GetItem(Guid id)
        {
             var item = repository.GetItem(id);
             if (item is null)
@@ -34,7 +35,7 @@ namespace Catalog.Controllers
                 //this function returns status code:404
                 return NotFound();
             }
-            return item;
+            return item.AsDto();
        }
     }
 }

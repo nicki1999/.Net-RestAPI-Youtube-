@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nicki\\OneDrive\\Desktop\\.net_webapi\\projects\\Catalog\\Catalog.csproj": {}
+    "C:\\Users\\nicki\\OneDrive\\Desktop\\github\\.Net-RestAPI-Youtube-\\projects\\Catalog\\Catalog.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nicki\\OneDrive\\Desktop\\.net_webapi\\projects\\Catalog\\Catalog.csproj": {
+    "C:\\Users\\nicki\\OneDrive\\Desktop\\github\\.Net-RestAPI-Youtube-\\projects\\Catalog\\Catalog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nicki\\OneDrive\\Desktop\\.net_webapi\\projects\\Catalog\\Catalog.csproj",
+        "projectUniqueName": "C:\\Users\\nicki\\OneDrive\\Desktop\\github\\.Net-RestAPI-Youtube-\\projects\\Catalog\\Catalog.csproj",
         "projectName": "Catalog",
-        "projectPath": "C:\\Users\\nicki\\OneDrive\\Desktop\\.net_webapi\\projects\\Catalog\\Catalog.csproj",
+        "projectPath": "C:\\Users\\nicki\\OneDrive\\Desktop\\github\\.Net-RestAPI-Youtube-\\projects\\Catalog\\Catalog.csproj",
         "packagesPath": "C:\\Users\\nicki\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nicki\\OneDrive\\Desktop\\.net_webapi\\projects\\Catalog\\obj\\",
+        "outputPath": "C:\\Users\\nicki\\OneDrive\\Desktop\\github\\.Net-RestAPI-Youtube-\\projects\\Catalog\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3Pu6AR/lQPU9OY+mOuluuPj4zuH/Abs4DUAE/48faGCnSyuIWGQe50I50/xa1MVpih8M395dCYfkWkjLSvYZqw==",
+  "dgSpecHash": "jkVnANRM0P2vCC3Wb/jFMJgJWsNIjwGXoepK+tzohnZTOHcEeSv5WIZ7pFvSJk/rcjKAE7VepAlAvJ9087J2xg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nicki\\OneDrive\\Desktop\\.net_webapi\\projects\\Catalog\\Catalog.csproj",
+  "projectFilePath": "C:\\Users\\nicki\\OneDrive\\Desktop\\github\\.Net-RestAPI-Youtube-\\projects\\Catalog\\Catalog.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nicki\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.9\\microsoft.aspnetcore.openapi.7.0.9.nupkg.sha512",
     "C:\\Users\\nicki\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
